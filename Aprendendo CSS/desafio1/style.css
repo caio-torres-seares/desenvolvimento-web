@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: blue;
+    min-height: 5vh;
+}
+
+.main {
+    background-color: red;
+    flex: 1;
+    padding: 20px
+}
+.footer {
+    background-color: blueviolet;
+    min-height: 5vh;
+}
+
