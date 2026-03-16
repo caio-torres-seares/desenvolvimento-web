@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de Formulário</title>
+</head>
+<body>
+    <h1>Campos de Formulário</h1>
+    <hr>
+    <form action="">
+        <label>Nome:<br>
+            <input type="text" id="nome" name="nome"><br><br>
+        </label>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade" min="0" max="120" step="2"><br><br>
+
+        <label for="dataNascimento">Data de Nascimento:</label><br>
+        <input type="date" name="dataNascimento" id="dataNascimento" min="1906-02-24" max="2026-02-23"><br><br>
+
+        <label for="horarioAlmoco">Horário de Almoço:</label><br>
+        <input type="time" name="horarioAlmoco" id="horarioAlmoco" min="10:00" max="15:00" step="3600"><br><br>
+
+        <label for="dataHoraConsulta">Data e Hora da Consulta:</label><br>
+        <input type="datetime-local" name="dataHoraConsulta" id="dataHoraConsulta" max="2026-12-31T23:59" min="2026-01-01T00:00" step="3600"><br><br>
+
+        <label for="busca">Buscar:</label><br>
+        <input type="search" name="busca" id="busca"><br><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" name="telefone" id="telefone" pattern="[0-9]{11}"><br><br>
+        
+        <label for="sitePesosal">Site Pesosal:</label><br>
+        <input type="url" name="sitePesosal" id="sitePesosal"><br><br>
+
+        <label for="corFavorita">Cor Favorita:</label><br>
+        <input type="color" name="corFavorita" id="corFavorita"><br><br>
+        
+        <label for="qtdDeFilhos">Quantidade de Filhos:</label><br>
+        <input type="range" name="qtdDeFilhos" id="qtdDeFilhos"><br><br>
+        
+        <label for="estadoCivil">Estado Civil:</label><br>
+        <input type="radio" name="estadoCivil" id="solteiro" value="solteiro">
+        <label for="solteiro">Solteiro</label><br>
+        <input type="radio" name="estadoCivil" id="casado" value="solteiro">
+        <label for="casado">Casado</label><br>
+        <input type="radio" name="estadoCivil" id="divorciado" value="solteiro">
+        <label for="divorciado">Divorciado</label><br>
+        
+        <label for="receberNovidades">Receber Novidades:</label>
+        <input type="checkbox" id="receberNovidades" name="receberNovidades"><br><br>  
+
+        <label for="curriculoPDF">Currículo:</label>
+        <input type="file" id="curriculoPDF" name="curriculoPDF" accept=".pdf"><br><br>  
+
+        <label for="ufNatal">Estado Natal:</label>
+        <select name="ufNatal" id="ufNatal">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="ES">Espírito Santo</option>
+        </select><br><br>
+
+        <label for="assuntosInteresse">Assuntos de Interesse:</label><br>
+        <select name="assuntosInteresse" id="assuntosInteresse" multiple size="4">
+            <option value="jogos">Jogos</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="esportes">Esportes</option>
+        </select><br><br>
+
+        <label for="miniBio">Mini Bio:</label><br>
+        <textarea name="miniBio" id="miniBio" rows="4" cols="50"></textarea><br><br>
+
+        <button type="reset">Limpar</button>
+
+        <button type="submit">Enviar</button>
+
+
+        <input type="hidden" name="idUsuario" value="12345">
+
+    </form>
+</body>
+</html>
